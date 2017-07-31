@@ -25,9 +25,11 @@ This is a simple project that will set up a JERSEY / JAX-RS web service connecte
     1. Click Finish
 1. Start the tomcat Server
     1. Right Click Tomcat v7.0 Server at localhost in the servers tab > Debug
+    1. At this point you should be able to see a response if you navigate to the following url in a browser (or postman) http://localhost:8080/edt-rest-api-exercise/user/1
 
 # Additional Resources
 - [Github Guides](https://guides.github.com/)
     - Understanding the GitHub Flow and Hello World should get you where you need to be
 - [DB Browser for SQLite](http://sqlitebrowser.org/)
 - [Apache Commons DbUtils](https://commons.apache.org/proper/commons-dbutils/)
+- [Postman](https://www.getpostman.com/)
