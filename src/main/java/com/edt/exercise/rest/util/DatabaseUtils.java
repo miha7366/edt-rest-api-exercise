@@ -6,7 +6,7 @@ import org.sqlite.SQLiteDataSource;
 public class DatabaseUtils {
 	
 	private static QueryRunner runner;
-	private static String DATABASE_PATH = "C:\\Users\\scott.telle\\Documents\\development\\sandbox\\edt-rest-api-exercise\\";
+	private static String DATABASE_PATH = "C:\\edt-rest-api-exercise\\";
 	
 	public static QueryRunner getQueryRunner() {
 		if (runner == null) {
@@ -16,4 +16,5 @@ public class DatabaseUtils {
 		}
 		return runner;
 	}
+
 }

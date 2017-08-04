@@ -27,11 +27,11 @@ public class UserService {
 	@Produces({
 		"application/json"
 	})
+
 	public Response getUser(@PathParam("userId") int userId) {
 		try {
 			ResultSetHandler<User> handler = new BeanHandler<User>(User.class);
 			User user = DatabaseUtils.getQueryRunner().query("SELECT * FROM Users WHERE userId = ?", handler, userId);
-			
 			if (user != null) {
 				return Response.status(200).entity(user).build();
 			}
@@ -45,3 +45,5 @@ public class UserService {
 		}
 	}
 }
+
+
